@@ -4,7 +4,7 @@ import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import {FormsModule} from "@angular/forms";
-import {NgIf, UpperCasePipe} from "@angular/common";
+import {NgForOf, NgIf, UpperCasePipe} from "@angular/common";
 import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 
 @Component({
@@ -12,7 +12,7 @@ import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  imports: [FormsModule, NgIf, UpperCasePipe, HeroDetailComponent],
+  imports: [FormsModule, NgIf, UpperCasePipe, HeroDetailComponent, NgForOf],
 })
 export class HeroesComponent implements OnInit {
 

@@ -3,6 +3,7 @@ import {HEROES} from '../mock-heroes';
 import {NgFor, NgIf, UpperCasePipe} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {Hero} from "../hero";
+import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 
 @Component({
   standalone: true,
@@ -14,6 +15,7 @@ import {Hero} from "../hero";
     NgIf,
     NgFor,
     UpperCasePipe,
+    HeroDetailComponent,
   ],
 })
 export class HeroesComponent {
